@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 4</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark mb-3">
+        <div class="row px-xl-5">
+            <!-- Botón Menú Vertical -->
+            <div class="col-lg-3 d-none d-lg-block position-relative">
+                <div class="dropdown">
+                    <button
+                        class="btn d-flex align-items-center justify-content-between bg-warning w-100 text-dark dropdown-toggle"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="height: 65px; padding: 0 30px;">
+                        <h6 class="m-0"><i class="fa fa-bars me-2"></i>Menú</h6>
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                        <li><a href="/index.html" class="dropdown-item text-dark">Homepage</a></li>
+                        <li><a href="intro_S3.html" class="dropdown-item text-dark">Semana 3</a></li>
+                        <li><a href="/Semana4/intro_S4.html" class="dropdown-item text-dark">Semana 4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Navbar Horizontal -->
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-0 px-0">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between align-items-center"
+                        id="navbarCollapse">
+                        <div class="navbar-nav align-items-center">
+                            <!-- Enlace Homepage -->
+                            <a href="/index.html" class="nav-item nav-link px-3">Homepage</a>
+
+                            <!-- Menú desplegable Semana 3 -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">Semana 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="intro_S3.html" class="dropdown-item">Introducción</a></li>
+                                    <li><a href="quest1_S3.html" class="dropdown-item">Question 1</a></li>
+                                    <li><a href="quest2_S3.html" class="dropdown-item">Question 2</a></li>
+                                    <li><a href="quest3_S3.html" class="dropdown-item">Question 3</a></li>
+                                    <li><a href="quest4_S3.html" class="dropdown-item">Question 4</a></li>
+                                    <li><a href="bibliography_S3.html" class="dropdown-item">Bibliografía</a></li>
+                                </ul>
+                            </div>
+                            <!-- Menú desplegable Semana 4 -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">Semana 4</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Semana4/intro_S4.html" class="dropdown-item">Introducción</a></li>
+                                    <li><a href="/Semana4/quest1_S4.html" class="dropdown-item">Question 1</a></li>
+                                    <li><a href="/Semana4/quest2_S4.html" class="dropdown-item">Question 2</a></li>
+                                    <li><a href="/Semana4/bibliography_S4.html" class="dropdown-item">Bibliografía</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="d-flex flex-column min-vh-100">
+        <div class="flex-fill">
+            <header class="banner text-center text-dark">
+                <h1>Estructura/Formato para registrar los casos de pruebas web</h1>
+            </header>
+            <table class="table table-bordered mt-4">
+                <tbody>
+                    <table class="table table-bordered mt-4">
+                        <thead>
+                            <tr>
+                                <th>ID del Caso de Prueba</th>
+                                <th>Título</th>
+                                <th>Descripción</th>
+                                <th>Precondiciones</th>
+                                <th>Datos de Prueba</th>
+                                <th>Pasos</th>
+                                <th>Resultado Esperado</th>
+                                <th>Resultado Obtenido</th>
+                                <th>Estado</th>
+                                <th>Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CP-001</td>
+                                <td>Login</td>
+                                <td>Valida el inicio de sesión con credenciales correctas.</td>
+                                <td>Página de login accesible</td>
+                                <td>Usuario: user, Contraseña: password</td>
+                                <td>1. Acceder a la página de login <br> 2. Ingresar credenciales <br> 3. Hacer clic en
+                                    "Login"</td>
+                                <td>Inicio de sesión exitoso y visualización de la Homepage.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>CP-002</td>
+                                <td>Validación de Gráfico</td>
+                                <td>Valida que el gráfico de entrevistas aparezca después del login.</td>
+                                <td>Usuario autenticado</td>
+                                <td>-</td>
+                                <td>1. Validar presencia del texto "Entrevistas los últimos 12 meses" <br> 2. Verificar
+                                    gráfico</td>
+                                <td>El gráfico y texto aparecen correctamente.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>CP-003</td>
+                                <td>Módulo Postulantes</td>
+                                <td>Realiza operaciones CRUD en el módulo de postulantes.</td>
+                                <td>Usuario autenticado</td>
+                                <td>Datos válidos de un postulante</td>
+                                <td>1. Clic en "Postulantes" <br> 2. Crear, buscar, editar y eliminar postulante</td>
+                                <td>Operaciones CRUD exitosas.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>CP-004</td>
+                                <td>Módulo Clientes</td>
+                                <td>Realiza operaciones CRUD en el módulo de clientes.</td>
+                                <td>Usuario autenticado</td>
+                                <td>Datos válidos de un cliente</td>
+                                <td>1. Clic en "Clientes" <br> 2. Crear, buscar, editar y eliminar cliente</td>
+                                <td>Operaciones CRUD exitosas.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>CP-005</td>
+                                <td>Módulo Células</td>
+                                <td>Realiza operaciones CRUD en el módulo de células.</td>
+                                <td>Usuario autenticado</td>
+                                <td>Datos válidos de una célula</td>
+                                <td>1. Clic en "Células" <br> 2. Crear, buscar, editar y eliminar célula</td>
+                                <td>Operaciones CRUD exitosas.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>CP-006</td>
+                                <td>Módulo Roles</td>
+                                <td>Realiza operaciones CRUD en el módulo de roles.</td>
+                                <td>Usuario autenticado</td>
+                                <td>Datos válidos de un rol</td>
+                                <td>1. Clic en "Roles" <br> 2. Crear, buscar, editar y eliminar rol</td>
+                                <td>Operaciones CRUD exitosas.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>CP-007</td>
+                                <td>Módulo Procesos</td>
+                                <td>Realiza operaciones CRUD en el módulo de procesos.</td>
+                                <td>Usuario autenticado</td>
+                                <td>Datos válidos de un proceso</td>
+                                <td>1. Clic en "Procesos" <br> 2. Crear, buscar, editar y eliminar proceso</td>
+                                <td>Operaciones CRUD exitosas.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>CP-008</td>
+                                <td>Módulo Etapas</td>
+                                <td>Realiza operaciones CRUD en el módulo de etapas.</td>
+                                <td>Usuario autenticado</td>
+                                <td>Datos válidos de una etapa</td>
+                                <td>1. Clic en "Etapas" <br> 2. Crear, buscar, editar y eliminar etapa</td>
+                                <td>Operaciones CRUD exitosas.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>CP-009</td>
+                                <td>Módulo Usuarios</td>
+                                <td>Realiza operaciones CRUD en el módulo de usuarios.</td>
+                                <td>Usuario autenticado</td>
+                                <td>Datos válidos de un usuario</td>
+                                <td>1. Clic en "Usuarios" <br> 2. Crear, buscar, editar y eliminar usuario</td>
+                                <td>Operaciones CRUD exitosas.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>CP-010</td>
+                                <td>Consulta por Fecha</td>
+                                <td>Valida la consulta de postulantes por rango de fechas.</td>
+                                <td>Usuario autenticado</td>
+                                <td>Rango de fechas</td>
+                                <td>1. Especificar rango de fechas <br> 2. Realizar consulta</td>
+                                <td>Se devuelven los postulantes dentro del rango de fechas.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>CP-011</td>
+                                <td>Reporte de Estadísticas</td>
+                                <td>Valida la generación de reportes de estadísticas de entrevistas.</td>
+                                <td>Usuario autenticado</td>
+                                <td>Intervalo de tiempo</td>
+                                <td>1. Seleccionar intervalo de tiempo <br> 2. Generar reporte</td>
+                                <td>El reporte muestra estadísticas de entrevistas en el intervalo.</td>
+                                <td>-</td>
+                                <td>Pendiente</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </tbody>
+            </table>
+
+
+        </div>
+
+        <!-- Footer Start -->
+        <footer class="container-fluid bg-dark text-white mt-5 py-4">
+            <div class="row px-xl-5">
+                <!-- Información Inicial -->
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <h5 class="text-uppercase text-white mb-2">Trabajo Semanal 3IT</h5>
+                    <p class="mb-1">Sebastián González Orellana</p>
+                    <small>QA Funcional 3IT</small>
+                </div>
+
+                <!-- Información del Diseñador -->
+                <div class="col-lg-6 col-md-12 d-flex justify-content-lg-end justify-content-center align-items-center">
+                    <p class="mb-0 text-white">
+                        Designed by
+                        <a class="text-primary" href="https://github.com/Sebasrdh">Sebasrdh</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Bootstrap JS y Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

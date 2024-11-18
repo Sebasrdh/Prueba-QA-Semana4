@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 1</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark mb-3">
+        <div class="row px-xl-5">
+            <!-- Botón Menú Vertical -->
+            <div class="col-lg-3 d-none d-lg-block position-relative">
+                <div class="dropdown">
+                    <button
+                        class="btn d-flex align-items-center justify-content-between bg-warning w-100 text-dark dropdown-toggle"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="height: 65px; padding: 0 30px;">
+                        <h6 class="m-0"><i class="fa fa-bars me-2"></i>Menú</h6>
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                        <li><a href="/index.html" class="dropdown-item text-dark">Homepage</a></li>
+                        <li><a href="/Semana3/intro_S3.html" class="dropdown-item text-dark">Semana 3</a></li>
+                        <li><a href="intro_S4.html" class="dropdown-item text-dark">Semana 4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Navbar Horizontal -->
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-0 px-0">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between align-items-center"
+                        id="navbarCollapse">
+                        <div class="navbar-nav align-items-center">
+                            <!-- Enlace Homepage -->
+                            <a href="/index.html" class="nav-item nav-link px-3">Homepage</a>
+
+                            <!-- Menú desplegable Semana 3 -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">Semana 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Semana3/intro_S3.html" class="dropdown-item">Introducción</a></li>
+                                    <li><a href="/Semana3/quest1_S3.html" class="dropdown-item">Question 1</a></li>
+                                    <li><a href="/Semana3/quest2_S3.html" class="dropdown-item">Question 2</a></li>
+                                    <li><a href="/Semana3/quest3_S3.html" class="dropdown-item">Question 3</a></li>
+                                    <li><a href="/Semana3/quest4_S3.html" class="dropdown-item">Question 4</a></li>
+                                    <li><a href="/Semana3/bibliography_S3.html" class="dropdown-item">Bibliografía</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Menú desplegable Semana 4 -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">Semana 4</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="intro_S4.html" class="dropdown-item">Introducción</a></li>
+                                    <li><a href="quest1_S4.html" class="dropdown-item">Question 1</a></li>
+                                    <li><a href="quest2_S4.html" class="dropdown-item">Question 2</a></li>
+                                    <li><a href="bibliography_S4.html" class="dropdown-item">Bibliografía</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Tabla Casos de prueba realizados-->
+    <div class="d-flex flex-column min-vh-100">
+        <div class="flex-fill">
+            <header class="banner text-center text-dark">
+                <h1 style="margin-bottom: 3rem;">Casos de prueba realizados</h1>
+            </header>
+            <table class="table table-bordered mt-4">
+                <thead class="table-light">
+                    <tr>
+                        <th>ID del Caso de Prueba</th>
+                        <th>Título</th>
+                        <th>Descripción</th>
+                        <th>Precondiciones</th>
+                        <th>Datos de Prueba</th>
+                        <th>Pasos</th>
+                        <th>Resultado Esperado</th>
+                        <th>Resultado Obtenido</th>
+                        <th>Estado</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CP-001</td>
+                        <td>Login</td>
+                        <td>Valida el inicio de sesión con credenciales correctas.</td>
+                        <td>Página de login accesible</td>
+                        <td>Usuario: user<br>Contraseña: password</td>
+                        <td>
+                            1. Acceder a la página de login<br>
+                            2. Ingresar credenciales<br>
+                            3. Hacer clic en "Login"
+                        </td>
+                        <td>Inicio de sesión exitoso y visualización de la Homepage.</td>
+                        <td>Inicio de sesión exitoso</td>
+                        <td>OK</td>
+                        <td>Test exitoso</td>
+                    </tr>
+                    <tr>
+                        <td>CP-002</td>
+                        <td>Validación de Gráfico</td>
+                        <td>Valida que el gráfico de entrevistas aparezca después del login.</td>
+                        <td>Usuario autenticado</td>
+                        <td>-</td>
+                        <td>
+                            1. Validar presencia del texto "Entrevistas los últimos 12 meses"<br>
+                            2. Verificar gráfico
+                        </td>
+                        <td>El gráfico y texto aparecen correctamente.</td>
+                        <td>Se valida gráfico y texto "Entrevistas los últimos 12 meses"</td>
+                        <td>OK</td>
+                        <td>Test exitoso</td>
+                    </tr>
+                    <tr>
+                        <td>CP-003</td>
+                        <td>Módulo Usuarios</td>
+                        <td>Realiza operaciones CRUD en el módulo de usuarios.</td>
+                        <td>Usuario autenticado</td>
+                        <td>
+                            Nombre: Sebastian<br>
+                            Apellido: Gonzalez<br>
+                            Login: sgonzalez<br>
+                            Clave: prueba123<br>
+                            Correo: sebas@hotmail.com<br>
+                            Teléfono: +56912345678
+                        </td>
+                        <td>
+                            1. Clic en "Usuarios"<br>
+                            2. Crear, editar y eliminar usuario
+                        </td>
+                        <td>Operaciones CRUD exitosas.</td>
+                        <td>
+                            - Creación de usuario con éxito<br>
+                            - Update de usuario con éxito<br>
+                            - Delete de usuario con éxito<br>
+                            - No permite crear usuario con datos en blanco
+                        </td>
+                        <td>OK</td>
+                        <td>Test exitoso</td>
+                    </tr>
+                    <tr>
+                        <td>CP-004</td>
+                        <td>Cerrar sesión</td>
+                        <td>Valida el botón cerrar sesión</td>
+                        <td>Usuario autenticado</td>
+                        <td>-</td>
+                        <td>
+                            1. Clic en botón cerrar sesión<br>
+                            2. Validar que aparezca página de login
+                        </td>
+                        <td>Cierre de sesión exitoso y visualización de página de login.</td>
+                        <td>
+                            Cierre de sesión exitoso<br>
+                            Visualización de página Login
+                        </td>
+                        <td>OK</td>
+                        <td>Test exitoso</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="row" style="justify-content: space-between; margin-left: 1rem; margin-right: 1rem;">
+            <!-- Accordion Módulo Login -->
+            <article class="col-lg-6" style="margin-bottom: 2rem;">
+                <h2 class="text-center">Módulo Login</h2>
+                <div class="accordion" id="accordionLogin">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLog1" aria-expanded="true" aria-controls="collapseLog1">
+                                Acceder a página de Login </button>
+                        </h2>
+                        <div id="collapseLog1" class="accordion-collapse collapse" data-bs-parent="#accordionLogin">
+                            <div class="accordion-body">
+                                <p>Se accede a la página de login a traves de
+                                    <strong>http://localhost:4200/#/auth/login</strong>
+                                </p>
+                                <img src="/pruebas_s4/Login/loginpage.png" alt="Acceso a loginpage"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLog2" aria-expanded="false" aria-controls="collapseLog2">
+                                Ingreso de credenciales
+                            </button>
+                        </h2>
+                        <div id="collapseLog2" class="accordion-collapse collapse" data-bs-parent="#accordionLogin">
+                            <div class="accordion-body">
+                                <p>Se ingresan las credenciales <strong>User / Password</strong> y se realiza clic en
+                                    <strong>Iniciar sesión</strong>
+                                </p>
+                                <img src="/pruebas_s4/Login/Login_data.png" alt="Ingreso de credenciales"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLog3" aria-expanded="false" aria-controls="collapseLog3">
+                                Resultado test en Allure
+                            </button>
+                        </h2>
+                        <div id="collapseLog3" class="accordion-collapse collapse" data-bs-parent="#accordionLogin">
+                            <div class="accordion-body">
+                                <p>Test se realiza con éxito</p>
+                                <img src="/pruebas_s4/Login/Login_allure.png" alt="Validación test en allure"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Accordion Módulo Gráfico -->
+            <article class="col-lg-6" style="margin-bottom: 2rem;">
+                <h2 class="text-center">Módulo Gráfico</h2>
+                <div class="accordion" id="accordionGraphic">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseGra1" aria-expanded="true" aria-controls="collapseGra1">
+                                Validar presencia del Texto y Gráfico
+                            </button>
+                        </h2>
+                        <div id="collapseGra1" class="accordion-collapse collapse" data-bs-parent="#accordionGraphic">
+                            <div class="accordion-body">
+                                <p>Se valida la presencia del gráfico y texto <strong>Entrevistas los últimos 12
+                                        meses</strong></p>
+                                <img src="/pruebas_s4/Graphic/Grafico_texto.png" alt="Validación gráfico"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseGra2" aria-expanded="false" aria-controls="collapseGra2">
+                                Resultado test en Allure
+                            </button>
+                        </h2>
+                        <div id="collapseGra2" class="accordion-collapse collapse" data-bs-parent="#accordionGraphic">
+                            <div class="accordion-body">
+                                <p>Test se realiza con éxito</p>
+                                <img src="/pruebas_s4/Graphic/Grafico_allure.png" alt="Validación test gráfico"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Accordion Módulo Usuarios -->
+            <article class="col-lg-6" style="margin-bottom: 2rem;">
+                <h2 class="text-center">Módulo Usuarios</h2>
+                <div class="accordion" id="accordionUsers">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseUse1" aria-expanded="true" aria-controls="collapseUse1">
+                                Acceder a Mantenedores/Usuarios
+                            </button>
+                        </h2>
+                        <div id="collapseUse1" class="accordion-collapse collapse" data-bs-parent="#accordionUsers">
+                            <div class="accordion-body">
+                                <p>Se ingresa en el dropdown Mantenedores y se accede a Usuarios</p>
+                                <img src="/pruebas_s4/Userpage/userpage.png" alt="Acceso a usuarios"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseUse2" aria-expanded="false" aria-controls="collapseUse2">
+                                Crear usuario
+                            </button>
+                        </h2>
+                        <div id="collapseUse2" class="accordion-collapse collapse" data-bs-parent="#accordionUsers">
+                            <div class="accordion-body">
+                                <p>Se realiza la creación de usuario con los datos preconfigurados en el Framework
+                                    Selenium</p>
+                                <img src="/pruebas_s4/Userpage/Creacion_usuario.png" alt="Crear usuario"
+                                    class="img-fluid mb-3">
+                                <hr>
+                                <p>Se confirma mensaje del sistema indicando creación exitosa</p>
+                                <img src="/pruebas_s4/Userpage/usuario_creado.png" alt="usuario creado"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseUse3" aria-expanded="false" aria-controls="collapseUse3">
+                                Actualizar usuario
+                            </button>
+                        </h2>
+                        <div id="collapseUse3" class="accordion-collapse collapse" data-bs-parent="#accordionUsers">
+                            <div class="accordion-body">
+                                <p>Se realiza la actualización del teléfono del usuario con los datos preconfigurados en
+                                    el Framework Selenium</p>
+                                <img src="/pruebas_s4/Userpage/update_usuario.png" alt="Update usuario"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseUse4" aria-expanded="false" aria-controls="collapseUse4">
+                                Eliminar usuario
+                            </button>
+                        </h2>
+                        <div id="collapseUse4" class="accordion-collapse collapse" data-bs-parent="#accordionUsers">
+                            <div class="accordion-body">
+                                <p>Se elimina el usuario creado</p>
+                                <img src="/pruebas_s4/Userpage/delete_usuario.png" alt="Delete usuario"
+                                    class="img-fluid mb-3">
+                                <hr>
+                                <p>Se confirma mensaje del sistema indicando eliminación exitosa</p>
+                                <img src="/pruebas_s4/Userpage/usuario_eliminado.png" alt="Delete usuario"
+                                    class="img-fluid mb-3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseUse5" aria-expanded="false" aria-controls="collapseUse5">
+                                Crear usuario con textbox en blanco
+                            </button>
+                        </h2>
+                        <div id="collapseUse5" class="accordion-collapse collapse" data-bs-parent="#accordionUsers">
+                            <div class="accordion-body">
+                                <p>Se intenta crear usuarios con dato en blanco y el sistema indica que no es posible
+                                </p>
+                                <img src="/pruebas_s4/Userpage/createuser_nodata.png" alt="create usuario no data"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseUse6" aria-expanded="false" aria-controls="collapseUse6">
+                                Resultado test en Allure
+                            </button>
+                        </h2>
+                        <div id="collapseUse6" class="accordion-collapse collapse" data-bs-parent="#accordionLogin">
+                            <div class="accordion-body">
+                                <p>Test se realiza con éxito</p>
+                                <img src="/pruebas_s4/Userpage/Usertest_allure.png" alt="user test allure"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Accordion Módulo Logout -->
+            <article class="col-lg-6" style="margin-bottom: 2rem;">
+                <h2 class="text-center">Módulo Logout</h2>
+                <div class="accordion" id="accordionLogout">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLogOne" aria-expanded="true" aria-controls="collapseLogOne">
+                                Clic en cerrar sesión
+                            </button>
+                        </h2>
+                        <div id="collapseLogOne" class="accordion-collapse collapse" data-bs-parent="#accordionLogout">
+                            <div class="accordion-body">
+                                <p>Se ubica el botón <strong>Cerrar sesión</strong> en el navbar y se realiza clic en
+                                    este.</p>
+                                <img src="/pruebas_s4/LogOut/logout_button.png" alt="Logout button"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLogTwo" aria-expanded="false" aria-controls="collapseLogTwo">
+                                Validar página Login luego de cerrar sesión
+                            </button>
+                        </h2>
+                        <div id="collapseLogTwo" class="accordion-collapse collapse" data-bs-parent="#accordionLogout">
+                            <div class="accordion-body">
+                                <p>Se valida redireccionamiento a página Login.</p>
+                                <img src="/pruebas_s4/Login/loginpage.png" alt="loginpage after logout"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLogThree" aria-expanded="false"
+                                aria-controls="collapseLogThree">
+                                Resultado test en Allure
+                            </button>
+                        </h2>
+                        <div id="collapseLogThree" class="accordion-collapse collapse" data-bs-parent="#accordionLogin">
+                            <div class="accordion-body">
+                                <p>Test se realiza con éxito</p>
+                                <img src="/pruebas_s4/LogOut/Logout_allure.png" alt="logout allure"
+                                    class="img-fluid mb-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- Footer Start -->
+        <footer class="container-fluid bg-dark text-white mt-5 py-4">
+            <div class="row px-xl-5">
+                <!-- Información Inicial -->
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <h5 class="text-uppercase text-white mb-2">Trabajo Semanal 3IT</h5>
+                    <p class="mb-1">Sebastián González Orellana</p>
+                    <small>QA Funcional 3IT</small>
+                </div>
+
+                <!-- Información del Diseñador -->
+                <div class="col-lg-6 col-md-12 d-flex justify-content-lg-end justify-content-center align-items-center">
+                    <p class="mb-0 text-white">
+                        Designed by
+                        <a class="text-primary" href="https://github.com/Sebasrdh">Sebasrdh</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Bootstrap JS y Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

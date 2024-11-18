@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 2</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark mb-3">
+        <div class="row px-xl-5">
+            <!-- Botón Menú Vertical -->
+            <div class="col-lg-3 d-none d-lg-block position-relative">
+                <div class="dropdown">
+                    <button
+                        class="btn d-flex align-items-center justify-content-between bg-warning w-100 text-dark dropdown-toggle"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="height: 65px; padding: 0 30px;">
+                        <h6 class="m-0"><i class="fa fa-bars me-2"></i>Menú</h6>
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                        <li><a href="/index.html" class="dropdown-item text-dark">Homepage</a></li>
+                        <li><a href="intro_S3.html" class="dropdown-item text-dark">Semana 3</a></li>
+                        <li><a href="/Semana4/intro_S4.html" class="dropdown-item text-dark">Semana 4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Navbar Horizontal -->
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-0 px-0">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between align-items-center"
+                        id="navbarCollapse">
+                        <div class="navbar-nav align-items-center">
+                            <!-- Enlace Homepage -->
+                            <a href="/index.html" class="nav-item nav-link px-3">Homepage</a>
+
+                            <!-- Menú desplegable Semana 3 -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">Semana 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="intro_S3.html" class="dropdown-item">Introducción</a></li>
+                                    <li><a href="quest1_S3.html" class="dropdown-item">Question 1</a></li>
+                                    <li><a href="quest2_S3.html" class="dropdown-item">Question 2</a></li>
+                                    <li><a href="quest3_S3.html" class="dropdown-item">Question 3</a></li>
+                                    <li><a href="quest4_S3.html" class="dropdown-item">Question 4</a></li>
+                                    <li><a href="bibliography_S3.html" class="dropdown-item">Bibliografía</a></li>
+                                </ul>
+                            </div>
+                            <!-- Menú desplegable Semana 4 -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">Semana 4</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Semana4/intro_S4.html" class="dropdown-item">Introducción</a></li>
+                                    <li><a href="/Semana4/quest1_S4.html" class="dropdown-item">Question 1</a></li>
+                                    <li><a href="/Semana4/quest2_S4.html" class="dropdown-item">Question 2</a></li>
+                                    <li><a href="/Semana4/bibliography_S4.html" class="dropdown-item">Bibliografía</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="d-flex flex-column min-vh-100">
+        <div class="flex-fill">
+            <header class="banner text-center text-dark" style="margin-bottom: 5rem;">
+                <h1>Conclusiones plan de prueba ejecutado</h1>
+            </header>
+
+            <div class="container">
+                <div class="row">
+
+                    <!-- Card Capacitación -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded" style="background-color: azure;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusión - Capacitación</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    Al realizar pruebas en este Endpoint se logra detectar que en los siguientes request
+                                    no figura error:
+                                </p>
+                                <li><strong>DELETE:</strong> Al intentar realizar una solicitud DELETE para eliminar una
+                                    Capacitación con un ID erróneo, la operación se ejecuta sin generar un error. Esto
+                                    debería generar un error indicando que el ID proporcionado no es válido o no existe
+                                    en el sistema.</li>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card Usuario -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded" style="background-color: azure;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusión - Usuario</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    Al realizar pruebas en este Endpoint se logra detectar que en los siguientes request
+                                    no figura error:
+                                </p>
+                                <li><strong>DELETE:</strong> Al intentar realizar una solicitud DELETE para eliminar un
+                                    Usuario con un ID erróneo, la operación se ejecuta sin generar un error. Esto
+                                    debería generar un error indicando que el ID proporcionado no es válido o no existe
+                                    en el sistema.</li>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card Tritiano -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded" style="background-color: azure;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusión - Tritiano</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    Al realizar pruebas en este Endpoint se logra detectar que en los siguientes request
+                                    no figura error:
+                                </p>
+                                <li><strong>PUT: </strong>Al ingresar un ID inexistente, la solicitud sigue realizando
+                                    la actualización de datos, cuando debería generar un error por no especificar un ID
+                                    válido de Tritiano. </li>
+                                <li><strong>DELETE:</strong> Al intentar realizar una solicitud DELETE para eliminar un
+                                    Tritiano con un ID erróneo, la operación se ejecuta sin generar un error. Esto
+                                    debería generar un error indicando que el ID proporcionado no es válido o no existe
+                                    en el sistema.</li>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card Célula -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded" style="background-color: azure;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusión - Célula</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    Al realizar pruebas en este Endpoint se logra detectar que en los siguientes request
+                                    no figura error:
+                                </p>
+                                <li><strong>POST: </strong> Al dejar el campo de nombre vacío, la creación de la Célula
+                                    se completa de todas formas, cuando debería mostrar un mensaje de error indicando la
+                                    falta de datos.</li>
+                                <li><strong>PUT: </strong>Al ingresar un ID inexistente, la solicitud sigue realizando
+                                    la actualización de datos, cuando debería generar un error por no especificar un ID
+                                    válido de una Célula. </li>
+                                <li><strong>DELETE: </strong> Al intentar eliminar una Célula con un ID inexistente, la
+                                    acción se completa cuando debería mostrar un error indicando que el ID no existe.
+                                </li>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card Postulante -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded" style="background-color: azure;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusión - Postulante</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    Al realizar pruebas en este Endpoint se logra detectar que en los siguientes request
+                                    no figura error:
+                                </p>
+                                <li><strong>POST: </strong> Al intentar crear un Postulante sin ingresar datos, debería
+                                    generarse un error; sin embargo, la creación se realiza de todas formas, sin los
+                                    datos necesarios.</li>
+                                <li><strong>PUT: </strong> Se realiza una actualización sin ingresar ningún dato, cuando
+                                    debería generarse un error debido a la falta de información.</li>
+                                <li><strong>DELETE: </strong>Al intentar eliminar un Postulante con un ID inválido, la
+                                    acción se realiza correctamente, cuando no debería ser posible debido a que se está
+                                    utilizando un ID inexistente. </li>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card Cliente -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded" style="background-color: azure;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusión - Cliente</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    Al realizar pruebas en este Endpoint se logra detectar que en los siguientes request
+                                    no figura error:
+                                </p>
+                                <li><strong>PUT: </strong> Al realizar una solicitud PUT para el Cliente con un ID
+                                    erróneo, la operación se ejecuta sin generar un error. Sin embargo, debería
+                                    mostrarse un error indicando que el ID es inválido. En cambio, se genera un error
+                                    únicamente cuando faltan datos en el cuerpo de la solicitud.</li>
+                                <li><strong>DELETE: </strong> Al intentar eliminar un Cliente utilizando un ID inválido
+                                    mediante una solicitud DELETE, la acción se realiza sin generar ningún error. Esto
+                                    debería generar un error indicando que el ID no existe en el sistema, ya que no se
+                                    puede eliminar un Cliente con un ID inválido.</li>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card Rol -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded" style="background-color: azure;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusión - Rol</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    Al realizar pruebas en este Endpoint se logra detectar que en los siguientes request
+                                    no figura error:
+                                </p>
+                                <li><strong>POST: </strong> Al intentar realizar una solicitud POST para crear un Rol
+                                    sin proporcionar datos en el campo 'detalle', la operación se ejecuta sin generar un
+                                    error. Sin embargo, debería mostrarse un mensaje de error indicando que el campo
+                                    'detalle' es obligatorio.</li>
+                                <li><strong>PUT: </strong>En la operación PUT para actualizar un Rol, no se genera un
+                                    error al utilizar un ID erróneo, ni tampoco se genera un error cuando faltan datos
+                                    en la solicitud. Debería generarse un error en ambos casos: uno por un ID inválido y
+                                    otro por la falta de datos requeridos.</li>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card Proceso -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded" style="background-color: azure;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusión - Proceso</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    Al realizar pruebas en este Endpoint se logra detectar que en los siguientes request
+                                    no figura error:
+                                </p>
+                                <li><strong>DELETE: </strong>Al intentar realizar una solicitud DELETE para eliminar un
+                                    Proceso con un ID erróneo, la operación se ejecuta sin generar un error. Esto
+                                    debería generar un error indicando que el ID proporcionado no es válido o no existe
+                                    en el sistema.</li>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card de Recomendaciones -->
+                    <article class="col-12 mb-4">
+                        <div class="card rounded" style="background-color: azure;">
+                            <header class="card-body">
+                                <h5 class="card-title">Recomendaciones para el Desarrollador</h5>
+                            </header>
+                            <footer class="card-body">
+                                <p class="card-text">
+                                    Se sugiere implementar una validación más robusta en todos los endpoints de la API
+                                    para garantizar que los datos ingresados sean correctos y completos antes de
+                                    proceder con las operaciones. Es importante que el sistema devuelva un error claro y
+                                    comprensible cuando se envíen datos inválidos o faltantes, especialmente en las
+                                    solicitudes POST, PUT y DELETE. Además, se debe verificar que los ID proporcionados
+                                    sean válidos y existan en la base de datos antes de permitir cualquier operación.
+                                </p>
+                                <p>Las solicitudes DELETE y PUT deben devolver un error si el ID proporcionado no
+                                    existe en la base de datos, en lugar de permitir la operación sin validaciones.</p>
+
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Start -->
+        <footer class="container-fluid bg-dark text-white mt-5 py-4">
+            <div class="row px-xl-5">
+                <!-- Información Inicial -->
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <h5 class="text-uppercase text-white mb-2">Trabajo Semanal 3IT</h5>
+                    <p class="mb-1">Sebastián González Orellana</p>
+                    <small>QA Funcional 3IT</small>
+                </div>
+
+                <!-- Información del Diseñador -->
+                <div class="col-lg-6 col-md-12 d-flex justify-content-lg-end justify-content-center align-items-center">
+                    <p class="mb-0 text-white">
+                        Designed by
+                        <a class="text-primary" href="https://github.com/Sebasrdh">Sebasrdh</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Bootstrap JS y Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

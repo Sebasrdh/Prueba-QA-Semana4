@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 1</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark mb-3">
+        <div class="row px-xl-5">
+            <!-- Botón Menú Vertical -->
+            <div class="col-lg-3 d-none d-lg-block position-relative">
+                <div class="dropdown">
+                    <button
+                        class="btn d-flex align-items-center justify-content-between bg-warning w-100 text-dark dropdown-toggle"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="height: 65px; padding: 0 30px;">
+                        <h6 class="m-0"><i class="fa fa-bars me-2"></i>Menú</h6>
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                        <li><a href="/index.html" class="dropdown-item text-dark">Homepage</a></li>
+                        <li><a href="intro_S3.html" class="dropdown-item text-dark">Semana 3</a></li>
+                        <li><a href="/Semana4/intro_S4.html" class="dropdown-item text-dark">Semana 4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Navbar Horizontal -->
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-0 px-0">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between align-items-center"
+                        id="navbarCollapse">
+                        <div class="navbar-nav align-items-center">
+                            <!-- Enlace Homepage -->
+                            <a href="/index.html" class="nav-item nav-link px-3">Homepage</a>
+
+                            <!-- Menú desplegable Semana 3 -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">Semana 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="intro_S3.html" class="dropdown-item">Introducción</a></li>
+                                    <li><a href="quest1_S3.html" class="dropdown-item">Question 1</a></li>
+                                    <li><a href="quest2_S3.html" class="dropdown-item">Question 2</a></li>
+                                    <li><a href="quest3_S3.html" class="dropdown-item">Question 3</a></li>
+                                    <li><a href="quest4_S3.html" class="dropdown-item">Question 4</a></li>
+                                    <li><a href="bibliography_S3.html" class="dropdown-item">Bibliografía</a></li>
+                                </ul>
+                            </div>
+                            <!-- Menú desplegable Semana 4 -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">Semana 4</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Semana4/intro_S4.html" class="dropdown-item">Introducción</a></li>
+                                    <li><a href="/Semana4/quest1_S4.html" class="dropdown-item">Question 1</a></li>
+                                    <li><a href="/Semana4/quest2_S4.html" class="dropdown-item">Question 2</a></li>
+                                    <li><a href="/Semana4/bibliography_S4.html" class="dropdown-item">Bibliografía</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="d-flex flex-column min-vh-100">
+        <div class="flex-fill">
+            <header class="banner text-center text-dark">
+                <h1 style="margin-bottom: 3rem;">Ejecuta el plan de pruebas propuesto en la semana 2. </h1>
+            </header>
+            <section class="row" style="justify-content: center; margin-inline-start: auto; margin-inline-end: auto;">
+                <!-- Accordion Endpoint Capacitación -->
+                <article class="col-lg-6" style="margin-bottom: 2rem;">
+                    <h2 class="text-center">Endpoint Capacitación</h2>
+                    <div class="accordion" id="accordionCapacitacion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCapOne" aria-expanded="true"
+                                    aria-controls="collapseCapOne">
+                                    Crear Capacitación (POST)
+                                </button>
+                            </h2>
+                            <div id="collapseCapOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCapacitacion">
+                                <div class="accordion-body">
+                                    <strong>Creación de Capacitación Analista QA Funcional</strong> Se valida crea la
+                                    capacitación de manera exitosa//<strong>Código 201</strong>
+                                    <img src="/pruebas_s3/Capacitacion/Post_Capacitacion.png"
+                                        alt="Creación Capacitación" class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Error al crear capacitación sin idTritiano</strong>//<strong>Código
+                                        500</strong>
+                                    <img src="/pruebas_s3/Capacitacion/Post_sindata_capacitacion.png"
+                                        alt="Prueba sin datos" class="img-fluid mb-3">
+                                    <img src="/pruebas_s3/Capacitacion/Post_sindata_capacitacion2.png"
+                                        alt="Prueba sin datos" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCapTwo" aria-expanded="false"
+                                    aria-controls="collapseCapTwo">
+                                    Listar Capacitaciones (GET)
+                                </button>
+                            </h2>
+                            <div id="collapseCapTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCapacitacion">
+                                <div class="accordion-body">
+                                    <strong>Se valida que el sistema devuelva todas las capacitaciones
+                                        disponibles</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Capacitacion/Get_capacitacion.png" alt="Listar capacitaciones"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCapThree" aria-expanded="false"
+                                    aria-controls="collapseCapThree">
+                                    Actualizar Capacitación (PUT)
+                                </button>
+                            </h2>
+                            <div id="collapseCapThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCapacitacion">
+                                <div class="accordion-body">
+                                    <strong>Se realiza actualización de la capacitación con ID 4 (Analista
+                                        QA)</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Capacitacion/Put_capacitacion.png" alt="Update Capacitación"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida que el sistema indica error al solicitar actualización de
+                                        capacitación sin ingresar fecha de finalización</strong>//<strong>Código
+                                        500</strong>
+                                    <img src="/pruebas_s3/Capacitacion/Put_sindata_capacitacion.png"
+                                        alt="Update sin datos Capacitación" class="img-fluid mb-3">
+                                    <img src="/pruebas_s3/Capacitacion/Put_sindata_capacitacion2.png"
+                                        alt="Update sin datos Capacitación" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCapFour" aria-expanded="false"
+                                    aria-controls="collapseCapFour">
+                                    Eliminar Capacitación (DELETE)
+                                </button>
+                            </h2>
+                            <div id="collapseCapFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCapacitacion">
+                                <div class="accordion-body">
+                                    <strong>Se elimina capacitación con ID 4 de forma exitosa</strong>//<strong>Código
+                                        200</strong>
+                                    <img src="/pruebas_s3/Capacitacion/Delete_capacitacion.png"
+                                        alt="Delete Capacitación" class="img-fluid mb-3">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Accordion Endpoint Usuario -->
+                <article class="col-lg-6" style="margin-bottom: 2rem;">
+                    <h2 class="text-center">Endpoint Usuario</h2>
+                    <div class="accordion" id="accordionUsuario">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseUsuOne" aria-expanded="true"
+                                    aria-controls="collapseUsuOne">
+                                    Crear Usuario (POST)
+                                </button>
+                            </h2>
+                            <div id="collapseUsuOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionUsuario">
+                                <div class="accordion-body">
+                                    <strong>Se crea un usuario nuevo de manera exitosa</strong>//<strong>Código
+                                        201</strong>
+                                    <img src="/pruebas_s3/Usuarios/Post_usuario.png" alt="Post usuario"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida que el sistema indica error al crear usuario con datos en blanco
+                                    </strong>//<strong>Código 400</strong>
+                                    <img src="/pruebas_s3/Usuarios/Post_sindata_usuario.png"
+                                        alt="Post usuario con datos en blanco" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseUsuTwo" aria-expanded="false"
+                                    aria-controls="collapseUsuTwo">
+                                    Listar Usuarios (GET)
+                                </button>
+                            </h2>
+                            <div id="collapseUsuTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionUsuario">
+                                <div class="accordion-body">
+                                    <strong>Se lista usuario por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Usuarios/Get_usuarioxID.png" alt="Get usuario"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida que el sistema indica error al buscar ID inexistente
+                                    </strong>//<strong>Código 404</strong>
+                                    <img src="/pruebas_s3/Usuarios/Get_sindata_usuarios.png" alt="Get sin ID usuarios"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseUsuThree" aria-expanded="false"
+                                    aria-controls="collapseUsuThree">
+                                    Actualizar Usuario (PUT)
+                                </button>
+                            </h2>
+                            <div id="collapseUsuThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionUsuario">
+                                <div class="accordion-body">
+                                    <strong>Se realiza actualización de usuario con ID 4</strong>//<strong>Código
+                                        200</strong>
+                                    <img src="/pruebas_s3/Usuarios/Update_usuario.png" alt="Put usuario"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida que el sistema indica error al actualizar con datos en blanco
+                                    </strong>//<strong>Código 404</strong>
+                                    <img src="/pruebas_s3/Usuarios/Update_sindata_usuario.png"
+                                        alt="Put sin datos usuario" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseUsuFour" aria-expanded="false"
+                                    aria-controls="collapseUsuFour">
+                                    Eliminar Usuario (DELETE)
+                                </button>
+                            </h2>
+                            <div id="collapseUsuFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionUsuario">
+                                <div class="accordion-body">
+                                    <strong>Se elimina usuario con ID 4</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Usuarios/Delete_usuario.png" alt="Delete usuario"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Accordion Endpoint Tritiano-->
+                <article class="col-lg-6" style="margin-bottom: 2rem;">
+                    <h2 class="text-center">Endpoint Tritiano</h2>
+                    <div class="accordion" id="accordionTritiano">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTriOne" aria-expanded="true"
+                                    aria-controls="collapseTriOne">
+                                    Crear Tritiano (POST)
+                                </button>
+                            </h2>
+                            <div id="collapseTriOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionTritiano">
+                                <div class="accordion-body">
+                                    <strong>Se crea nuevo Tritiano de manera exitosa</strong>//<strong>Código
+                                        201</strong>
+                                    <img src="/pruebas_s3/Tritiano/Post_tritiano.png" alt="Post Tritiano"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida que el sistema indica error al crear Tritiano con datos en blanco
+                                    </strong>//<strong>Código 500</strong>
+                                    <img src="/pruebas_s3/Tritiano/Post_sindata_tritianos.png"
+                                        alt="Post Tritiano con datos en blanco" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTriTwo" aria-expanded="false"
+                                    aria-controls="collapseTriTwo">
+                                    Obtener Tritiano por ID(GET)
+                                </button>
+                            </h2>
+                            <div id="collapseTriTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionTritiano">
+                                <div class="accordion-body">
+                                    <strong>Se obtiene Tritiano por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Tritiano/Get_tritianoxid.png" alt="Get Tritiano x ID"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida que el sistema indica error al buscar Tritiano con ID inexistente
+                                    </strong>//<strong>Código 404</strong>
+                                    <img src="/pruebas_s3/Tritiano/Get_tritiano_idnoexist.png"
+                                        alt="Get Tritiano ID no existe" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTriThree" aria-expanded="false"
+                                    aria-controls="collapseTriThree">
+                                    Actualizar Tritiano (PUT)
+                                </button>
+                            </h2>
+                            <div id="collapseTriThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionTritiano">
+                                <div class="accordion-body">
+                                    <strong>Se actualiza Tritiano por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Tritiano/Put_tritiano.png" alt="Put Tritiano"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTriFour" aria-expanded="false"
+                                    aria-controls="collapseTriFour">
+                                    Eliminar Tritiano (DELETE)
+                                </button>
+                            </h2>
+                            <div id="collapseTriFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionTritiano">
+                                <div class="accordion-body">
+                                    <strong>Se elimina Tritiano por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Tritiano/delete_tritiano.png" alt="Delete Tritiano"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Accordion Endpoint Célula-->
+                <article class="col-lg-6" style="margin-bottom: 2rem;">
+                    <h2 class="text-center">Endpoint Célula</h2>
+                    <div class="accordion" id="accordionCelula">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCelOne" aria-expanded="true"
+                                    aria-controls="collapseCelOne">
+                                    Crear Célula (POST)
+                                </button>
+                            </h2>
+                            <div id="collapseCelOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCelula">
+                                <div class="accordion-body">
+                                    <strong>Se crea nueva Célula de manera exitosa</strong>//<strong>Código 201</strong>
+                                    <img src="/pruebas_s3/Celula/Post_Celula.png" alt="Post Célula"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCelTwo" aria-expanded="false"
+                                    aria-controls="collapseCelTwo">
+                                    Listar Células (GET)
+                                </button>
+                            </h2>
+                            <div id="collapseCelTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCelula">
+                                <div class="accordion-body">
+                                    <strong>Se obtiene Célula por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Celula/Get_celula.png" alt="Get Célula"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida que el sistema indica error al buscar Célula con ID
+                                        inexistente</strong>//<strong>Código 404</strong>
+                                    <img src="/pruebas_s3/Celula/Get_celula_noid.png"
+                                        alt="Get Célula con ID inexistente" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCelThree" aria-expanded="false"
+                                    aria-controls="collapseCelThree">
+                                    Actualizar Célula (PUT)
+                                </button>
+                            </h2>
+                            <div id="collapseCelThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCelula">
+                                <div class="accordion-body">
+                                    <strong>Se actualiza Célula por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Celula/Put_celula.png" alt="Put Célula"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCelFour" aria-expanded="false"
+                                    aria-controls="collapseCelFour">
+                                    Eliminar Célula (DELETE)
+                                </button>
+                            </h2>
+                            <div id="collapseCelFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCelula">
+                                <div class="accordion-body">
+                                    <strong>Se elimina Célula por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Celula/Delete_celula.png" alt="Delete Célula"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Accordion Endpoint Postulante-->
+                <article class="col-lg-6" style="margin-bottom: 2rem;">
+                    <h2 class="text-center">Endpoint Postulante</h2>
+                    <div class="accordion" id="accordionPostulante">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePosOne" aria-expanded="true"
+                                    aria-controls="collapsePosOne">
+                                    Crear Postulante (POST)
+                                </button>
+                            </h2>
+                            <div id="collapsePosOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPostulante">
+                                <div class="accordion-body">
+                                    <strong>Se crea nuevo Postulante de manera exitosa</strong>//<strong>Código
+                                        201</strong>
+                                    <img src="/pruebas_s3/Postulante/Post_postulante.png" alt="Post Postulante"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePosTwo" aria-expanded="false"
+                                    aria-controls="collapsePosTwo">
+                                    Listar Postulantes (GET)
+                                </button>
+                            </h2>
+                            <div id="collapsePosTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPostulante">
+                                <div class="accordion-body">
+                                    <strong>Se obtiene Postulante por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Postulante/Get_postulante.png" alt="Get Postulante"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida error al buscar Postulante con ID
+                                        inexistente</strong>//<strong>Código 404</strong>
+                                    <img src="/pruebas_s3/Postulante/Get_postulante_noid.png" alt="Get Postulante no ID"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePosThree" aria-expanded="false"
+                                    aria-controls="collapsePosThree">
+                                    Actualizar Postulantes (PUT)
+                                </button>
+                            </h2>
+                            <div id="collapsePosThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPostulante">
+                                <div class="accordion-body">
+                                    <strong>Se actualiza Postulante por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Postulante/Put_postulante.png" alt="Put Postulante"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePosFour" aria-expanded="false"
+                                    aria-controls="collapsePosFour">
+                                    Eliminar Postulante (DELETE)
+                                </button>
+                            </h2>
+                            <div id="collapsePosFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPostulante">
+                                <div class="accordion-body">
+                                    <strong>Se elimina Postulante de manera exitosa</strong>//<strong>Código
+                                        200</strong>
+                                    <img src="/pruebas_s3/Postulante/Delete_postulante.png" alt="Delete Postulante"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Accordion Endpoint Cliente-->
+                <article class="col-lg-6" style="margin-bottom: 2rem;">
+                    <h2 class="text-center">Endpoint Cliente</h2>
+                    <div class="accordion" id="accordionCliente">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCliOne" aria-expanded="true"
+                                    aria-controls="collapseCliOne">
+                                    Crear Cliente (POST)
+                                </button>
+                            </h2>
+                            <div id="collapseCliOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCliente">
+                                <div class="accordion-body">
+                                    <strong>Se crea nuevo Cliente de manera exitosa</strong>//<strong>Código
+                                        201</strong>
+                                    <img src="/pruebas_s3/Cliente/Post_cliente.png" alt="Post Cliente"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida que el sistema arroja error al crear cliente con datos en
+                                        blanco</strong>//<strong>Código 500</strong>
+                                    <img src="/pruebas_s3/Cliente/Post_cliente_nodata.png" alt="Post Cliente no data"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCliTwo" aria-expanded="false"
+                                    aria-controls="collapseCliTwo">
+                                    Listar Clientes (GET)
+                                </button>
+                            </h2>
+                            <div id="collapseCliTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCliente">
+                                <div class="accordion-body">
+                                    <strong>Se obtiene Cliente por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Cliente/Get_cliente.png" alt="Get Cliente"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida error al buscar Postulante con ID
+                                        inexistente</strong>//<strong>Código 404</strong>
+                                    <img src="/pruebas_s3/Cliente/Get_cliente_noid.png" alt="Get Cliente id no existe"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCliThree" aria-expanded="false"
+                                    aria-controls="collapseCliThree">
+                                    Actualizar Cliente (PUT)
+                                </button>
+                            </h2>
+                            <div id="collapseCliThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCliente">
+                                <div class="accordion-body">
+                                    <strong>Se actualiza Cliente por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Cliente/Put_cliente.png" alt="Put Cliente"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida que el sistema arroja error al actualizar con datos en
+                                        blanco</strong>//<strong>Código 500</strong>
+                                    <img src="/pruebas_s3/Cliente/Put_nodata_cliente.png" alt="Put Cliente sin datos"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCliFour" aria-expanded="false"
+                                    aria-controls="collapseCliFour">
+                                    Eliminar Cliente (DELETE)
+                                </button>
+                            </h2>
+                            <div id="collapseCliFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionCliente">
+                                <div class="accordion-body">
+                                    <strong>Se elimina Cliente por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Cliente/Delete_cliente.png" alt="Delete Cliente"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Accordion Endpoint Rol-->
+                <article class="col-lg-6" style="margin-bottom: 2rem;">
+                    <h2 class="text-center">Endpoint Rol</h2>
+                    <div class="accordion" id="accordionRol">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseRolOne" aria-expanded="true"
+                                    aria-controls="collapseRolOne">
+                                    Crear Rol (POST)
+                                </button>
+                            </h2>
+                            <div id="collapseRolOne" class="accordion-collapse collapse" data-bs-parent="#accordionRol">
+                                <div class="accordion-body">
+                                    <strong>Se crea nuevo Rol de manera exitosa</strong>//<strong>Código 201</strong>
+                                    <img src="/pruebas_s3/Rol/Post_rol.png" alt="Post Rol" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseRolTwo" aria-expanded="false"
+                                    aria-controls="collapseRolTwo">
+                                    Listar Rol (GET)
+                                </button>
+                            </h2>
+                            <div id="collapseRolTwo" class="accordion-collapse collapse" data-bs-parent="#accordionRol">
+                                <div class="accordion-body">
+                                    <strong>Se lista de manera correcta los roles</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Rol/Get_rol.png" alt="Get Rol" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseRolThree" aria-expanded="false"
+                                    aria-controls="collapseRolThree">
+                                    Actualizar Rol (PUT)
+                                </button>
+                            </h2>
+                            <div id="collapseRolThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionRol">
+                                <div class="accordion-body">
+                                    <strong>Se actualiza Rol por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Rol/Put_rol.png" alt="Put Rol" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseRolFour" aria-expanded="false"
+                                    aria-controls="collapseRolFour">
+                                    Eliminar Rol (DELETE)
+                                </button>
+                            </h2>
+                            <div id="collapseRolFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionRol">
+                                <div class="accordion-body">
+                                    <strong>Eliminar el Rol no fue posible, debido a errores con la API ZohoAPI</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Accordion Endpoint Proceso-->
+                <article class="col-lg-6" style="margin-bottom: 2rem;">
+                    <h2 class="text-center">Endpoint Proceso</h2>
+                    <div class="accordion" id="accordionProceso">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseProOne" aria-expanded="true"
+                                    aria-controls="collapseProOne">
+                                    Crear Proceso (POST)
+                                </button>
+                            </h2>
+                            <div id="collapseProOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionProceso">
+                                <div class="accordion-body">
+                                    <strong>Se crea nuevo Proceso de manera exitosa</strong>//<strong>Código
+                                        201</strong>
+                                    <img src="/pruebas_s3/Proceso/Post_proceso.png" alt="Post Proceso"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida error al crear proceso con datos
+                                        inválidos</strong>//<strong>Código 500</strong>
+                                    <img src="/pruebas_s3/Proceso/Post_proceso_datainvalid.png"
+                                        alt="Post Proceso no data" class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseProTwo" aria-expanded="false"
+                                    aria-controls="collapseProTwo">
+                                    Listar Procesos (GET)
+                                </button>
+                            </h2>
+                            <div id="collapseProTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionProceso">
+                                <div class="accordion-body">
+                                    <strong>Se obtiene Proceso por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Proceso/Get_procesoxid.png" alt="Get Proceso"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida error al buscar proceso con ID
+                                        inexistente</strong>//<strong>Código 404</strong>
+                                    <img src="/pruebas_s3/Proceso/Get_proceso_noid.png" alt="Get Proceso ID no existe"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseProThree" aria-expanded="false"
+                                    aria-controls="collapseProThree">
+                                    Actualizar Proceso (PUT)
+                                </button>
+                            </h2>
+                            <div id="collapseProThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionProceso">
+                                <div class="accordion-body">
+                                    <strong>Se actualiza Proceso por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Proceso/Put_proceso.png" alt="Put Proceso"
+                                        class="img-fluid mb-3">
+                                    <hr>
+                                    <strong>Se valida error al actualizar proceso con ID inexistente
+                                    </strong>//<strong>Código 404</strong>
+                                    <img src="/pruebas_s3/Proceso/Get_proceso_noid.png" alt="Put Proceso ID no existe"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseProFour" aria-expanded="false"
+                                    aria-controls="collapseProFour">
+                                    Eliminar Proceso (DELETE)
+                                </button>
+                            </h2>
+                            <div id="collapseProFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionProceso">
+                                <div class="accordion-body">
+                                    <strong>Se elimina Proceso por ID</strong>//<strong>Código 200</strong>
+                                    <img src="/pruebas_s3/Proceso/Delete_proceso.png" alt="Delete Proceso"
+                                        class="img-fluid mb-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+            </section>
+        </div>
+
+
+
+        <!-- Footer Start -->
+        <footer class="container-fluid bg-dark text-white mt-5 py-4">
+            <div class="row px-xl-5">
+                <!-- Información Inicial -->
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <h5 class="text-uppercase text-white mb-2">Trabajo Semanal 3IT</h5>
+                    <p class="mb-1">Sebastián González Orellana</p>
+                    <small>QA Funcional 3IT</small>
+                </div>
+
+                <!-- Información del Diseñador -->
+                <div class="col-lg-6 col-md-12 d-flex justify-content-lg-end justify-content-center align-items-center">
+                    <p class="mb-0 text-white">
+                        Designed by
+                        <a class="text-primary" href="https://github.com/Sebasrdh">Sebasrdh</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Bootstrap JS y Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

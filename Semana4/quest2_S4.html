@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 2</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark mb-3">
+        <div class="row px-xl-5">
+            <!-- Botón Menú Vertical -->
+            <div class="col-lg-3 d-none d-lg-block position-relative">
+                <div class="dropdown">
+                    <button
+                        class="btn d-flex align-items-center justify-content-between bg-warning w-100 text-dark dropdown-toggle"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="height: 65px; padding: 0 30px;">
+                        <h6 class="m-0"><i class="fa fa-bars me-2"></i>Menú</h6>
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                        <li><a href="/index.html" class="dropdown-item text-dark">Homepage</a></li>
+                        <li><a href="/Semana3/intro_S3.html" class="dropdown-item text-dark">Semana 3</a></li>
+                        <li><a href="intro_S4.html" class="dropdown-item text-dark">Semana 4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Navbar Horizontal -->
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-0 px-0">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between align-items-center"
+                        id="navbarCollapse">
+                        <div class="navbar-nav align-items-center">
+                            <!-- Enlace Homepage -->
+                            <a href="/index.html" class="nav-item nav-link px-3">Homepage</a>
+
+                            <!-- Menú desplegable Semana 3 -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">Semana 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Semana3/intro_S3.html" class="dropdown-item">Introducción</a></li>
+                                    <li><a href="/Semana3/quest1_S3.html" class="dropdown-item">Question 1</a></li>
+                                    <li><a href="/Semana3/quest2_S3.html" class="dropdown-item">Question 2</a></li>
+                                    <li><a href="/Semana3/quest3_S3.html" class="dropdown-item">Question 3</a></li>
+                                    <li><a href="/Semana3/quest4_S3.html" class="dropdown-item">Question 4</a></li>
+                                    <li><a href="/Semana3/bibliography_S3.html" class="dropdown-item">Bibliografía</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Menú desplegable Semana 4 -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">Semana 4</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="intro_S4.html" class="dropdown-item">Introducción</a></li>
+                                    <li><a href="quest1_S4.html" class="dropdown-item">Question 1</a></li>
+                                    <li><a href="quest2_S4.html" class="dropdown-item">Question 2</a></li>
+                                    <li><a href="bibliography_S4.html" class="dropdown-item">Bibliografía</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="d-flex flex-column min-vh-100">
+        <div class="flex-fill">
+            <header class="banner text-center text-dark" style="margin-bottom: 5rem;">
+                <h1>Conclusiones plan de prueba ejecutado</h1>
+            </header>
+
+            <div class="container">
+                <div class="row">
+
+                    <!-- Card LoginTest -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded text-white" style="background-color: #54595f;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusiones de LoginTest</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    <strong>Configuración y Término de Sesión: </strong>El método setup y tearDown
+                                    aseguran que el entorno de prueba esté correctamente inicializado antes de cada
+                                    prueba y limpiado después.
+                                </p>
+                                <p class="card-text">
+                                    <strong>Funcionalidad de Inicio de Sesión: </strong>La prueba principal llamada
+                                    iniciodeSesion verifica que el proceso de inicio de sesión funcione de acuerdo a los
+                                    requisitos establecidos, incluyendo la correcta validación de credenciales.
+                                </p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card GraphicTest -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded text-white" style="background-color: #54595f;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusiones de GraphicTest</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    <strong>Validación de Componentes Visuales: </strong>La prueba llamada
+                                    graficovisible se focaliza en validar que los gráficos y textos en la pantalla sean
+                                    visibles y se desplieguen correctamente. Esta prueba asegura que la interfaz gráfica
+                                    del usuario sea intuitiva y funcional.
+                                </p>
+                                <p class="card-text">
+                                    <strong>Configuración y Desmontaje: </strong>Similar a las demás pruebas, los
+                                    métodos setup y tearDown son vitales para preparar y limpiar el entorno de prueba
+                                    respectivamente.
+                                </p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card UserTest -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded text-white" style="background-color: #54595f;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusiones de UserTest</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    <strong>Creación de Usuario: </strong>La prueba userspage valida que la
+                                    funcionalidad para crear un nuevo usuario opere sin errores e introduce
+                                    correctamente los datos.
+                                </p>
+                                <p class="card-text">
+                                    <strong>Validación de Campos Vacíos: </strong>La prueba validateErrorOnEmptyFields
+                                    asegura que los campos obligatorios de los formularios muestren mensajes de error
+                                    adecuados cuando se dejan vacíos.
+                                </p>
+                                <p class="card-text">
+                                    <strong>Edición y Eliminación de Usuario: </strong>Las pruebas editUser y
+                                    deleteUser aseguran que las funcionalidades de editar y eliminar usuarios funcionen
+                                    correctamente, permitiendo la administración adecuada de los datos del usuario.
+                                </p>
+                            </section>
+                        </div>
+                    </article>
+
+                    <!-- Card LogoutTest -->
+                    <article class="col-6 mb-4">
+                        <div class="card rounded text-white" style="background-color: #54595f;">
+                            <header class="card-body">
+                                <h5 class="card-title">Conclusiones de LogoutTest</h5>
+                            </header>
+                            <section class="card-body">
+                                <p class="card-text">
+                                    <strong>Cierre de Sesión: </strong>La prueba testLogout comprueba que el proceso
+                                    de cerrar sesión funciona correctamente, y que al hacerlo, la pantalla de inicio de
+                                    sesión se muestra como se espera.
+                                </p>
+                                <p class="card-text">
+                                    <strong>Fiabilidad del Sistema: </strong>Esta prueba ayuda a asegurar que los
+                                    usuarios puedan finalizar su sesión de manera segura, protegiendo así la información
+                                    de la cuenta.
+                                </p>
+                            </section>
+                        </div>
+                    </article>
+
+
+
+
+                    <!-- Card de Recomendaciones -->
+                    <article class="col-12 mb-4">
+                        <div class="card rounded text-white" style="background-color: #54595f;">
+                            <header class="card-body">
+                                <h5 class="card-title">Recomendaciones para el Desarrollador</h5>
+                            </header>
+                            <footer class="card-body">
+                                <p class="card-text">
+                                    Se sugiere implementar el uso de identificadores (ID) para referenciar cada objeto
+                                    de manera correcta y consistente en todas las pruebas automatizadas. Los selectores
+                                    basados en XPath son propensos a romperse cuando hay cambios en la estructura del
+                                    DOM, lo que puede ocurrir con frecuencia durante el mantenimiento o actualización de
+                                    la interfaz de usuario. Utilizar ID únicos y estables hará que las pruebas sean más
+                                    robustas y resilientes a estos cambios.
+                                </p>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Start -->
+        <footer class="container-fluid bg-dark text-white mt-5 py-4">
+            <div class="row px-xl-5">
+                <!-- Información Inicial -->
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <h5 class="text-uppercase text-white mb-2">Trabajo Semanal 3IT</h5>
+                    <p class="mb-1">Sebastián González Orellana</p>
+                    <small>QA Funcional 3IT</small>
+                </div>
+
+                <!-- Información del Diseñador -->
+                <div class="col-lg-6 col-md-12 d-flex justify-content-lg-end justify-content-center align-items-center">
+                    <p class="mb-0 text-white">
+                        Designed by
+                        <a class="text-primary" href="https://github.com/Sebasrdh">Sebasrdh</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Bootstrap JS y Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
